@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.application-form{
+    max-width:700px;
+    margin:0 auto;
+    border:2px solid blue;
+}
+
+.form-fields{
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+    border:2px solid red;
+}
+
+.heading-subpart{
+    font-size: 20px;
+}
+
+.form-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form-innerContainer{
+    display: flex;
+    flex-direction: column;
+}
+  
+label {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.user-details, #job_role, textarea{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.textarea_control {
+    margin-top:15px;
+    grid-column: 1 / span 2;
+}
+  
+.textarea_control textarea {
+    width: 50%;
+}
+
+input:focus {
+    outline-color: red;
+}
+
+.apply-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.submit-btn{
+    background-color: red;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease-in; 
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ccc;
+    border: 2px solid red;
+    color: black;
+    transition: 0.3s ease-out;
+  }
+  
